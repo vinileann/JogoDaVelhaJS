@@ -1,0 +1,96 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 40px; /* Adiciona espaçamento entre os elementos filhos da container */
+}
+h1
+{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px; /* Espaçamento menor abaixo do título */
+}
+.turn
+{
+    font-size: 1.8rem;
+    margin-bottom: 20px; 
+    color: #0077cc;
+    font-weight: bold;
+}
+.board
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px; /* Aumenta o espaçamento entre as casas */
+    width: 320px;
+    height: 320px;
+    background-color: #dff1ff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.casa
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #0077cc;
+    background-color: #e8f6ff;
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.casa:hover
+{
+    background-color: #cbe9ff;
+    transform: scale(1.05);
+}
+.casa:active
+{
+    background-color: #b3e1ff;
+    transform: scale(1.02);
+}
+.restart-btn
+{
+    margin-top: 30px;
+    padding: 12px 40px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.restart-btn:hover
+{
+    background-color: #218838;
+}
+.restart-btn:active
+{
+    transform: scale(0.98);
+}
+.restart-btn:focus
+{
+    outline: none;
+}
